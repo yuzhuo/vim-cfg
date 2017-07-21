@@ -39,10 +39,14 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Installation:
+" 1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" 2. yum install ctags-etags
+" 3. yum install the_silver_searcher
+
 " my
-set cul cuc
 set nu
-color ron
+colorscheme pablo
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -57,6 +61,8 @@ Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/a.vim'
+Bundle 'rking/ag.vim'
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'bling/vim-airline'
 "Bundle 'vim-airline/vim-airline'
@@ -98,7 +104,6 @@ let NERDTreeAutoDeleteBuffer=1
 let g:tagbar_ctags_bin='ctags'          "ctags程序的路径
 let g:tagbar_width=30                   "窗口宽度的设置
 map <F3> :Tagbar<CR>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -213,7 +218,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme pablo
 catch
 endtry
 
@@ -393,8 +398,8 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 " To go to the previous search results do:
 "   <leader>p
 "
-map <leader>cc :botright cope<cr>
-map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+"map <leader>cc :botright cope<cr>
+"map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
