@@ -45,6 +45,7 @@
 " 3. yum install the_silver_searcher
 
 " my
+set mouse=c " a/i/v/c/h/r/n
 set nu
 colorscheme pablo
 set nocompatible              " be iMproved, required

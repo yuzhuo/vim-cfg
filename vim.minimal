@@ -40,7 +40,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " my
-set mouse=a
+set mouse=c " a/i/v/c/h/r/n
 set cul cuc
 set nu
 color ron
