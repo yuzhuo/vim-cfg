@@ -45,6 +45,7 @@ set cul cuc
 set nu
 color ron
 set nocompatible
+set fileencodings=utf8,gbk
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
