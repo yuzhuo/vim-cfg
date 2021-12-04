@@ -65,6 +65,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/a.vim'
 Bundle 'rking/ag.vim'
+Bundle 'skywind3000/vim-auto-popmenu'
+
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'bling/vim-airline'
 "Bundle 'vim-airline/vim-airline'
@@ -109,6 +111,12 @@ let g:NERDSpaceDelims=1
 let g:tagbar_ctags_bin='ctags'          "ctags程序的路径
 let g:tagbar_width=30                   "窗口宽度的设置
 map <F3> :Tagbar<CR>
+
+"""""""""""""""vim-auto-popmenu"""""""""""""""""""""
+" https://github.com/skywind3000/vim-auto-popmenu
+let g:apc_enable_ft = {'*':1}
+set completeopt=menu,menuone,noselect
+set shortmess+=c
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
